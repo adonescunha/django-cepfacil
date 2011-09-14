@@ -6,6 +6,7 @@ import urlparse
 from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
 from django.http import HttpResponse
+from django.utils import simplejson
 
 MIMETYPES = {
     'xml': 'text/xml',
@@ -29,6 +30,7 @@ def service(self, cep, format):
     if format == 'json':
         response = urlparse.parse_qs(response)
 
-    print response
+        return HttpResponse(simplejson.dumps(response, ensure_ascii=False),
+            mimetype='text/javascript')
 
     return HttpResponse(response, mimetype=MIMETYPES[format])
