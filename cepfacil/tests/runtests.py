@@ -18,6 +18,7 @@ if not settings.configured:
             'tests',
             'cepfacil',
         ),
+        CEPFACIL_CODE='SAMPLE-CODE'
     )
 
 from django.test.simple import run_tests
