@@ -8,12 +8,12 @@ setup(
     description='A Django app that provides a wrapper to CEP Fácil web service.',
     author='Adones Cunha',
     author_email='hi@adonescunha.com',
-    url='http://github.com/adonescunha/django-cepfacil/',
+    url='https://github.com/adonescunha/django-cepfacil/',
     packages=[
         'cepfacil'
     ],
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 1 - Planning',
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
